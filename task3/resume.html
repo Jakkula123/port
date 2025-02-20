@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Jakkula - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #333333;
+            --text-color: #333333;
+            --accent-color: #2196f3;
+            --background-color: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--background-color);
+            padding: 2rem;
+        }
+        
+        .resume-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 3rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        }
+        
+        .content {
+            padding-left: 1rem;
+        }
+        
+        .education-item, .project-item, .certification-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .education-item h3, .project-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .date-location {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-category {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .skill-list {
+            list-style: none;
+        }
+        
+        .skill-list li {
+            margin-bottom: 0.3rem;
+        }
+        
+        .declaration {
+            font-style: italic;
+            color: #888;
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--primary-color);
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+                margin: 0;
+            }
+
+            .resume-container {
+                max-width: 100%;
+                margin: 0;
+                padding: 2rem;
+                border: none;
+                box-shadow: none;
+                background: white;
+            }
+
+            /* Ensure all text is visible and properly formatted */
+            * {
+                color: black !important;
+                text-shadow: none !important;
+                box-shadow: none !important;
+                background: transparent !important;
+            }
+
+            /* Ensure page breaks don't cut content awkwardly */
+            .section {
+                page-break-inside: avoid;
+            }
+
+            /* Remove any blur effects */
+            .resume-container {
+                backdrop-filter: none;
+            }
+        }
+
+        .print-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .print-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .print-btn i {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header class="header">
+            <h1 class="name">SANJAY JAKKULA</h1>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:jakkulasanjay123@gmail.com">jakkulasanjay123@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 78422 49469</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Nandigama, India</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
+            <div class="content">
+                <p>Motivated Data Science student with hands-on experience in AI, web development, and data analysis. Skilled in Python, JavaScript, and prompt engineering, with a strong background in technical and soft skills.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">TECHNICAL SKILLS</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <ul class="skill-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Tools</h3>
+                    <ul class="skill-list">
+                        <li>Tableau</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Key Competencies</h3>
+                    <ul class="skill-list">
+                        <li>Prompt Engineering</li>
+                        <li>AI Technologies</li>
+                        <li>API Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="content">
+                <div class="education-item">
+                    <h3>Bachelor of Science in Data Science</h3>
+                    <div class="date-location">
+                        <i class="fas fa-calendar-alt"></i> 2022 - 2025 |
+                        <i class="fas fa-map-marker-alt"></i> K.B.N. College, Vijayawada
+                    </div>
+                    <p>Current GPA: 7.5/10</p>
+                </div>
+                <div class="education-item">
+                    <h3>Intermediate in Biophysics, Mathematics, and Computer Science (BIPC)</h3>
+                    <div class="date-location">
+                        <i class="fas fa-calendar-alt"></i> 2019 - 2021 |
+                        <i class="fas fa-map-marker-alt"></i> Sri Akshara Junior College, Nandigama
+                    </div>
+                    <p>Score: 68%</p>
+                </div>
+                <div class="education-item">
+                    <h3>Secondary School Certificate</h3>
+                    <div class="date-location">
+                        <i class="fas fa-calendar-alt"></i> 2018 - 2019 |
+                        <i class="fas fa-map-marker-alt"></i> Sri Gowthama E.M High School, Nandigama
+                    </div>
+                    <p>Score: 95%</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">PROFESSIONAL PROJECTS</h2>
+            <div class="content">
+                <div class="project-item">
+                    <h3>AI Stock Slave - Chatbot Web Application</h3>
+                    <p><strong>Framework:</strong> Rasa</p>
+                    <p><strong>Technologies:</strong> Python, API Integration</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul>
+                        <li>Developed a customized chatbot fetching real-time cryptocurrency, stock, and commodity prices</li>
+                        <li>Implemented external API integration from api ninjas</li>
+                        <li>Designed user-friendly interface for data visualization</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Community Service Project</h3>
+                    <p><strong>Role:</strong> Team Leader</p>
+                    <p><strong>Duration:</strong> 180 hours</p>
+                    <p><strong>Key Contributions:</strong></p>
+                    <ul>
+                        <li>Led a 6-member team in digital literacy training</li>
+                        <li>Conducted comprehensive computer skills workshops</li>
+                        <li>Taught fundamental concepts including hardware, software, and internet usage</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">SOFT SKILLS</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <ul class="skill-list">
+                        <li>Verbal Communication</li>
+                        <li>Problem Solving</li>
+                        <li>Teamwork</li>
+                        <li>Analytical Thinking</li>
+                        <li>Leadership</li>
+                        <li>Interpersonal Skills</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">CERTIFICATIONS</h2>
+            <div class="content">
+                <div class="certification-item">
+                    <p>Community Service Project Internship | Nobel Kids High School</p>
+                </div>
+                <div class="certification-item">
+                    <p>AI in Practice: Applying AI | DelftX</p>
+                </div>
+                <div class="certification-item">
+                    <p>Prompt Engineering Internship | Packet Prep</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="declaration">
+            <p>I declare that the information provided is true and accurate to the best of my knowledge.</p>
+            <p>Place: Nandigama</p>
+            <p>Signature: J. Sanjay</p>
+        </div>
+    </div>
+    <button onclick="window.print()" class="print-btn">
+        <i class="fas fa-file-pdf"></i>
+        Save as PDF
+    </button>
+    <script>
+        // Add event listener for print dialog
+        window.addEventListener('beforeprint', function() {
+            document.body.style.margin = '0';
+            document.body.style.padding = '0';
+        });
+    </script>
+</body>
+</html>

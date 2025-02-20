@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Jakkula - Portfolio</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Load styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="#home" class="logo-icon">
+                        <i class="fas fa-code"></i>
+                        <span class="logo-text">SJ</span>
+                    </a>
+                </div>
+                <button class="menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text-container">
+                <span class="greeting">Hello, I'm</span>
+                <h1>Sanjay Jakkula</h1>
+                <div class="hero-description">
+                    <p class="role">Data Science & AI Developer</p>
+                    <p class="tagline">Building Intelligent Solutions for Tomorrow</p>
+                    <p class="typing-text"></p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/jakkula123" class="social-icon" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://instagram.com/___sun__j____" class="social-icon" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/+917842249469" class="social-icon" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#projects" class="cta-primary">View My Work</a>
+                    <a href="#contact" class="cta-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-container">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="./300536351_187288337035392_126899300624958648_n.webp" alt="Sanjay Jakkula" class="profile-image">
+                        <div class="frame-border"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="highlight-text">Passionate About AI & Data Science</h3>
+                    <p>I'm a dedicated Data Scientist and AI Developer with a passion for solving complex problems through innovative solutions. With expertise in machine learning, deep learning, and data analytics, I strive to create impactful applications that drive real-world change.</p>
+                    <div class="cv-buttons">
+                        <a href="resume.html" class="btn-cv view-cv" target="_blank">
+                            <i class="fas fa-eye"></i> View CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Programming Languages</h3>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                </ul>
+                <div class="skill-progress-bar">
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Data Science</h3>
+                <ul class="skill-list">
+                    <li>Machine Learning</li>
+                    <li>Data Analysis</li>
+                    <li>Statistical Modeling</li>
+                    <li>Deep Learning</li>
+                </ul>
+                <div class="skill-progress-bar">
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Web Technologies</h3>
+                <ul class="skill-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+                <div class="skill-progress-bar">
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Tools & Platforms</h3>
+                <ul class="skill-list">
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>VS Code</li>
+                </ul>
+                <div class="skill-progress-bar">
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2 class="section-title">Education Journey</h2>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Bachelor of Science in Data Science</h3>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> K.B.N. College, Vijayawada</p>
+                    <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2022 - 2025</p>
+                    <ul class="timeline-details">
+                        <li>Current GPA: 7.5/10</li>
+                        <li>Specializing in Data Science and AI Technologies</li>
+                        <li>Active participant in technical workshops and seminars</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Intermediate in Biophysics, Mathematics, and Computer Science</h3>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Sri Akshara Junior College, Nandigama</p>
+                    <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2019 - 2021</p>
+                    <ul class="timeline-details">
+                        <li>Score: 68%</li>
+                        <li>Focused on BIPC curriculum with Computer Science</li>
+                        <li>Developed strong foundation in scientific principles</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Secondary School Certificate</h3>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Sri Gowthama E.M High School, Nandigama</p>
+                    <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2018 - 2019</p>
+                    <ul class="timeline-details">
+                        <li>Score: 95%</li>
+                        <li>Class Representative</li>
+                        <li>Active participant in school activities and competitions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="AI Stock Slave">
+                </div>
+                <div class="project-details">
+                    <h3>AI Stock Slave - Chatbot</h3>
+                    <p><strong>Framework:</strong> Rasa</p>
+                    <p><strong>Technologies:</strong> Python, API Integration</p>
+                    <ul>
+                        <li>Developed a customized chatbot fetching real-time cryptocurrency, stock, and commodity prices</li>
+                        <li>Implemented external API integration from api ninjas</li>
+                        <li>Designed user-friendly interface for data visualization</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://jakkula123.github.io/Stock_Slave/home.html" class="view-project" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="Job Application Project">
+                </div>
+                <div class="project-details">
+                    <h3>JOB Application Form</h3>
+                    <p><strong>Technologies:</strong> React.js, Node.js, MongoDB</p>
+                    <ul>
+                        <li>Developed a dynamic form application with real-time validation</li>
+                        <li>Implemented secure data storage and retrieval</li>
+                        <li>Added user authentication and authorization</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://azma152.github.io/task2/" class="view-project" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.pexels.com/photos/1674049/pexels-photo-1674049.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="Image Gallery">
+                </div>
+                <div class="project-details">
+                    <h3>Dynamic Image Gallery</h3>
+                    <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript</p>
+                    <ul>
+                        <li>Built a responsive image gallery with filtering capabilities</li>
+                        <li>Implemented lazy loading for optimal performance</li>
+                        <li>Added smooth transitions and animations</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://azma152.github.io/task1/" class="view-project" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="Movie Ticket Booking">
+                </div>
+                <div class="project-details">
+                    <h3>Ticket Booking System</h3>
+                    <p><strong>Technologies:</strong> PHP, MySQL, jQuery</p>
+                    <ul>
+                        <li>Created a complete ticket booking system with seat selection</li>
+                        <li>Implemented payment gateway integration</li>
+                        <li>Added email confirmation system</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://azma152.github.io/task4/" class="view-project" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="E-commerce Grocery Project">
+                </div>
+                <div class="project-details">
+                    <h3>E-commerce Platform</h3>
+                    <p><strong>Technologies:</strong> MERN Stack</p>
+                    <ul>
+                        <li>Built a full-featured e-commerce platform with cart functionality</li>
+                        <li>Implemented user authentication and product management</li>
+                        <li>Added order tracking and admin dashboard</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://azma152.github.io/task5/" class="view-project" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?auto=format&fit=crop&w=800&h=600" 
+                         alt="Calculator">
+                </div>
+                <div class="project-details">
+                    <h3>Advanced Calculator</h3>
+                    <p><strong>Technologies:</strong> JavaScript, CSS Grid</p>
+                    <ul>
+                        <li>Built a scientific calculator with advanced mathematical functions</li>
+                        <li>Implemented keyboard support and history tracking</li>
+                        <li>Added theme switching capability</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://azma152.github.io/task3/" class="view-project" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:jakkulasanjay2004@gmail.com" class="contact-link">jakkulasanjay123@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+919390803009" class="contact-link">+91 7842249469</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="https://maps.google.com/?q=Nandigama,+Krishna+District,+Andhra+Pradesh" target="_blank" class="contact-link">
+                        Nandigama, Krishna District, Andhra Pradesh
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">
+                    <i class="fas fa-code"></i>
+                    <span class="logo-text">SJ</span>
+                </span>
+            </div>
+            <p class="copyright">@ 2024 Sanjay Jakkula. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Defer non-critical JavaScript -->
+    <script src="https://unpkg.com/docx@8.2.3/build/index.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
